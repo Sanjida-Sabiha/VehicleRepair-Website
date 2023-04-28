@@ -1,0 +1,857 @@
+/*
+    Template Name: Vehicle Repair ---- GEARUP
+    Author - Sanjida
+    Description: 
+    Version: 1.0
+
+    Index
+    ====
+
+    01. Reset CSS
+    02. Header Area
+    03. Banner Area
+    04. About Area
+    05. Service Area
+    06. Addition Service
+    07. Team Area
+    08. Testimonial Area
+    9. Guarantee Area
+    10. Gallery Area
+    11. News Area
+    12. Contact Area
+    13. Footer Area
+
+*/
+
+/* 01. Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* 02. Header Area*/
+.header-area{}
+.head {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{}
+.logo a{}
+.logo a img {
+	width: 100%;
+}
+.menu {}
+.menu ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu ul li{}
+.menu ul li a {
+    margin: 0 16px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .3s;
+}
+.menu ul li a:hover{
+    color:blue;
+}
+.menu ul li a i {
+    width: 20px;
+    font-size: 19px;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+}
+
+/* 03. Banner area */
+.bannar-area{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.bannar-area:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8d8d8d;
+    z-index: -1;
+    opacity: 0.5;
+}
+.bannar {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+.bannar h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 40px;
+}
+.bannar span{
+    display: block;
+}
+.bannar p {
+    font-size: 18px;
+    line-height: 29px;
+    color: black;
+    margin-bottom: 28px;
+}
+.bannar a,.about-list a{
+    border: 1px solid transparent;
+    padding: 10px;
+    
+    color: #E9204F;
+    background-color: black;
+    /* margin-top: 10px; */
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.bannar a:hover{
+    color: white;
+    background-color: #E9204F;
+    border-color:#E9204F;
+}
+
+/* 04. About Area */
+.about-area{}
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-img {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 624px;
+    margin: 100px 0;
+    align-items: center;
+}
+.single-img {
+    margin: 0 15px;
+    flex-basis: 280px;
+}
+.single-img img{}
+.about-info {
+    flex-basis: 670px;
+}
+.about-info h4, .service-info h4,.team-info h4,.gallery-info h3,.news h3,.partners h3,.contact-title h3 {
+    font-size: 15px;
+    color: #E9204F;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.about-info h1, .service-info h1,.team-info h1,.gallery-info h1,.news h1,.partners p,.contact-title h1,.cont-info h1{
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.about-info span {
+    display: block;
+}
+.about-info p {
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 25px;
+    line-height: 26px;
+    color: gray;
+}
+.about-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0;
+}
+.single-list {
+    flex-basis: 259px;
+    margin-right: 70px;
+    margin-bottom: 16px;
+}
+.single-list ul{}
+.single-list ul li {
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+    padding: 6px 0;
+}
+.single-list ul li i {
+    font-size: 16px;
+    color: #E9204F;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.about-list a:hover{
+    color: white;
+    background-color: #E9204F;
+    border-color:#E9204F;
+}
+
+/* 05. Service Area */
+.service-area{
+    background-color: #a5a7a9;
+}
+.service-info {
+    margin-left: 195px;
+    margin-top: 70px;
+}
+.service-info h4{}
+.service-info h1{}
+.service-info p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #444444;
+    font-weight: 400;
+    font-family: "Yantramanav";
+    padding-top: 10px;
+}
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 56px 200px;
+}
+.single-service {
+    flex-basis: 275px;
+    margin-bottom: 25px;
+    margin-right: 18px;
+    padding: 30px 17px;
+    border: 1px solid transparent;
+    background-color: white;
+    transition: .9s;
+}
+.single-service:hover {
+    background-color: rgb(15, 15, 15);
+    transform: translatey(-8px);
+    color: white;
+
+}
+.single-service h3 {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 100;
+    color: #2545be;
+}
+.single-service h2 {
+    font-size: 20px;
+    padding: 7px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.single-service:hover h2{
+    color: white;
+}
+.single-link {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.single-link a {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #e8092e;
+}
+.single-link a:hover{
+    color: #fff;
+}
+.single-link i {
+    font-size: 37px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #e8092e;
+}
+
+/* 06. Addition Service */
+.addition-ser{
+    width: auto;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+
+}
+.addition-ser::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8d8d8d;
+    z-index: -1;
+    opacity: 0.5;
+}
+.addition {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 18px 240px;
+    align-items: center;
+}
+.sing-img {
+    flex-basis: 272px;
+}
+.sing-img img{
+    width: 100%;
+}
+.sing-info {
+    flex-basis: 480px;
+}
+.sing-info p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+.sing {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 20px 0;
+    width: 330px;
+    transition: .7s;
+}
+.sing-one {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    flex-basis: 290px;
+}
+.sing-one i {
+    font-size: 30px;
+    width: 50px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #E9204F;
+}
+.sing-one p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: serif;
+}
+
+/* 07. Team Area */
+.team-area{}
+.team {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    margin: 43px 0;
+    transition: .8s;
+}
+.team:hover{
+    transform: translateX(-15%);
+}
+.team-info {
+    flex-basis: 265px;
+    margin-right: 20px;
+}
+.team-info h4{}
+.team-info h1{}
+.team-info p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: sans-serif;
+}
+.team span {
+    display: block;
+    padding-top: 17px;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 21px;
+    color: gray;
+}
+.team-img {
+    flex-basis: 678px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.single-team {
+    flex-basis: 215px;
+}
+.single-team img {
+    width: 100%;
+}
+
+/* 08. Testimonial Area */
+.testi-area {
+    width: auto;
+    height: 400px;
+    background-position: inherit;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.testi-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #828282;
+    z-index: -1;
+    opacity: 0.5;
+}
+.testimonial {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 60px 27px;
+}
+.test-img {
+    flex-basis: 125px;
+    margin-right: 26px;
+}
+.test-img img {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.test-info {
+    flex-basis: 385px;
+}
+.test-info h1 {
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-bottom: 24px;
+    color:#E9204F;
+}
+.test-info p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #c2c2c2;
+    font-family: sans-serif;
+}
+.test-info h3 {
+    padding-top: 12px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.test-info span {
+    display: block;
+    line-height: 28px;
+    font-size: 11px;
+    color: #c1dffc;
+    text-transform: uppercase;
+}
+
+/* 9. Guarantee Area */
+.guarantee-area{}
+.guarantee {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 80px 140px;
+}
+.g-info {
+    flex-basis: 160px;
+    margin-left: 40px;
+}
+.g-info h1 {
+    font-size: 30px;
+    font-family: serif;
+    font-weight: 700;
+    padding-top: 10px;
+    color: #E9204F;
+}
+.g-info span {
+    display: block;
+    line-height: 32px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+}
+.guarantee-box {
+    flex-basis: 760px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.single-box {
+    flex-basis: 245px;
+    padding: 8px;
+}
+.single-box i {
+    width: 55px;
+    height: 55px;
+    line-height: 52px;
+    font-size: 35px;
+    text-align: center;
+    border: 1px solid rgba(123, 123, 123, 0.15);
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    color: rgb(17, 17, 17);
+}
+.single-box h3 {
+    font-size: 18px;
+    padding-top: 13px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: darkslategray;
+}
+.single-box p {
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 7px;
+    text-transform: capitalize;
+    font-family: serif;
+}
+
+/* 10. Gallery Area */
+.gallery-area{}
+.gallery-info {}
+.gallery-info h3,.gallery-info h1{
+    text-align: center;
+}
+.gallery-info h1{}
+.gallery-info p {
+    text-align: center;
+    padding-top: 8px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 35px 70px;
+}
+.gallery-img {
+    flex-basis: 255px;
+}
+.gallery-img img {
+    width: 100%;
+}
+.gallery-img h1 {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+.gallery-img span {
+    display: block;
+    line-height: 27px;
+    font-size: 12px;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+
+/* 11. News Area */
+.news-area{
+    background-color: #f9f9f9;
+}
+.news {
+    margin: 15px 145px;
+}
+.news h3{}
+.news h1{}
+.blogs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 46px 0;
+}
+.single-blog {
+    border: 1px solid transparent;
+    flex-basis: 320px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.single-blog img {
+    width: 100%;
+}
+.single-blog h4 {
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    color: gray;
+    font-family: sans-serif;
+}
+.single-blog p {
+    font-size: 18px;
+    text-align: center;
+    padding: 13px;
+    line-height: 25px;
+    font-family: serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.single-blog p:hover{
+    color: #E9204F;
+}
+.single-blog span{
+    display: block;
+}
+.single-blog a {
+    font-size: 15px;
+    padding-left: 95px;
+    text-transform: capitalize;
+    font-family: serif;
+    font-weight: 600;
+    color: #E9204F;  
+}
+.single-blog:hover a{
+    color: black;
+}
+.partners{}
+.partners h3,.partners p{
+    text-align: center;
+}
+.partners p{
+
+}
+.partner-list{}
+.partner-list ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 24px 265px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+.partner-list ul li {
+    padding: 6px;
+    transition: .9s;
+}
+.partner-list ul li:hover{
+    transform: translate(-10px);
+}
+.partner-list ul li img {
+    width: 100%;
+}
+
+/* 12. Contact Area */
+.contact-area{}
+.contact-title {
+    margin-left: 150px;
+}
+.contact-title h3 {
+    padding-top: 50px;
+}
+.contact-title h1{}
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+.cont-form {
+    flex-basis: 555px;
+}
+.cont-form form{}
+.cont-form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    padding-left: 7px;
+    color: gray;
+    font-family: sans-serif;
+}
+.cont-form textarea {
+    width: 100%;
+    height: 130px;
+    padding-left: 7px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.cont-form input[type="submit"] {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #E9204F;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    padding: 10px;
+}
+.cont-form input[type="submit"]:hover{
+    color: #E9204F;
+    background-color: black;
+}
+.cont-info {
+    flex-basis: 490px;
+    margin-right: 66px;
+}
+.cont-info h1{}
+.cont-info p {
+    font-size: 15px;
+    line-height: 23px;
+    padding-top: 10px;
+    color: gray;
+    font-family: sans-serif;
+}
+.single-info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 17px;
+}
+.single-info i {
+    width: 40px;
+    height: 46px;
+    line-height: 46px;
+    color: #E9204F;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 12px;
+}
+.single-info h4 {
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: serif;
+}
+.single-info span {
+    display: block;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+.section-contact {
+    width: 1060px;
+    margin: 50px 0;
+}
+.contact-map {
+    width: 1000px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.contact-map iframe {
+    height: 300px;
+}
+
+/* 13. Footer Area */
+.footer-area {
+    background-color: #212529;
+    margin-top: 70px;
+}
+.footer{}
+.foot-outer{}
+.foot-outer ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0px 541px;
+    padding-top: 29px;
+}
+
+.foot-outer ul li{
+    transition: .9s;
+}
+.foot-outer ul li:hover{
+    transform: translatey(-8px);
+}
+.foot-outer ul li a{}
+.foot-outer ul li a i {
+    width: 41px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #E9204F;
+    text-align: center;
+    color: white;
+}
+.foot-outer ul li a i:hover{
+    color: #E9204F;
+    border-color: #fff;
+    background-color: white;
+}
+.footer-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.main {
+    flex-basis: 370px;
+    margin-left: 20px;
+}
+.main p {
+    font-size: 20px;
+    color:white;
+}
+.main span {
+    text-transform: capitalize;
+    color: #E9204F;
+}
+.policy {
+    flex-basis: 350px;
+}
+.policy ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.policy ul li{}
+.policy ul li a {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+}
+.policy ul li a:hover{
+    color: #E9204F;
+}
